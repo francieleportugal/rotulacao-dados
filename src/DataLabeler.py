@@ -3,7 +3,7 @@ import numpy as np
 COL_NOTIFICACOES = 'quantidade_notificacoes'
 COL_LABEL = 'label'
 MAX_SCORE = 5
-INITIAL_SCORE = 0
+INITIAL_SCORE = 2
 UP_MEAN = 1
 DOWN_MEAN = 0
 CICLO = 'Ciclo'
@@ -15,7 +15,7 @@ class DataLabeler:
         mean = np.mean(list(df[COL_NOTIFICACOES]))
 
         data = list(map(
-            lambda x : UP_MEAN if x > mean + margin else DOWN_MEAN,
+            lambda x : UP_MEAN if x > (mean + margin) else DOWN_MEAN,
             list(df[COL_NOTIFICACOES])
         ))
         

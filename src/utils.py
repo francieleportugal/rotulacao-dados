@@ -6,7 +6,7 @@ import matplotlib.patches as mpatches
 
 
 TITLE = 'CASOS DE DENGUE - {}'
-PATH_LOG = '/home/franciele/Projetos/rotulacao-dados/src/log/log_{}.csv'
+PATH_LOG = '/home/franciele/Projetos/rotulacao-dados/src/log/log_{}.txt'
 PATH_FIGURE = '/home/franciele/Projetos/rotulacao-dados/src/figures/{}.png'
 
 def clean_log (municipio):
