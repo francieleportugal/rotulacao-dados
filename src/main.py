@@ -27,4 +27,7 @@ for municipio in list_municipios:
     df_municipio['final_label'] = column_final_label 
     df_municipio.to_csv(PATH_LABELED.format(municipio))
 
+    utils.clean_figure(municipio)
+    utils.save_figure(df_municipio, municipio)
+
     utils.close_log(log)
