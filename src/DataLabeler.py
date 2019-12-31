@@ -6,8 +6,10 @@ MAX_SCORE = 5
 INITIAL_SCORE = 0
 UP_MEAN = 1
 DOWN_MEAN = 0
+CICLO = 'Ciclo'
+NAO_CICLO =  'Não ciclo'
 
-class DataLabeler():
+class DataLabeler:
     def mark_database (self, df):
         margin = 5
         mean = np.mean(list(df[COL_NOTIFICACOES]))
@@ -69,3 +71,22 @@ class DataLabeler():
                 log.write('Score: ' + str(score) + '\n')
         
         return result
+
+    def get_column_label(self, sizeDataset, positions_groups):
+        column_label = []
+        size = len(positions_groups)
+        position = 0
+        
+        group = positions_groups[position]
+        
+        for i in range(sizeDataset):
+            if i >= group[0] and i <= group[1]:
+                column_label.append(CICLO)
+            else:
+                column_label.append(NAO_CICLO)
+   
+            if(i == group[1] and (position + 1) < size):
+                position = position + 1
+                group = positions_groups[position]        
+                
+        return column_label
