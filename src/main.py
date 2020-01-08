@@ -26,9 +26,24 @@ for municipio in list_municipios:
         column_final_label = dataLabeler.get_column_label(len(list(df_municipio['label'])), groups)
         
         df_municipio['final_label'] = column_final_label 
+        
+        df_municipio = df_municipio.drop(columns=['Unnamed: 0', 'id', 'municipio', 'label'])
+        print(df_municipio.head())
         df_municipio.to_csv(PATH_LABELED.format(municipio))
 
+        data_labeled = pd.read_csv(PATH_LABELED.format(municipio))
+        print(data_labeled.head())
         utils.clean_figure(municipio)
-        utils.save_figure(df_municipio, municipio)
+
+
+        # data = [
+        #     ['01/01/2019', '3', 'Ciclo'],
+        #     ['02/01/2019', '2', 'Não ciclo'],
+        #     ['03/01/2019', '3', 'Ciclo']
+        # ] 
+  
+        # teste = pd.DataFrame(data, columns = ['data', 'quantidade_notificacoes', 'final_label']) 
+        # print(teste)
+        utils.save_figure(data_labeled, municipio)
 
         utils.close_log(log)

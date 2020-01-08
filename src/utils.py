@@ -1,9 +1,11 @@
 import os
 import helpers
 import numpy as np
+import matplotlib as mat
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
+print(mat.__version__)
 
 TITLE = 'CASOS DE DENGUE - {}'
 PATH_LOG = '/home/franciele/Projetos/rotulacao-dados/src/log/log_{}.txt'
