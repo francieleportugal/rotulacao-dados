@@ -46,7 +46,9 @@ class DataLabeler:
             elif not isSeachingForEnds:
                 
                 if i == len(data)-1:
-                    result.append([begin,i])
+                    if self.is_ciclo_valido(ciclo):
+                        ciclo = [begin, end]
+                        result.append(ciclo)
                 
                 elif value == UP_MEAN:
                     score = score +1
@@ -60,14 +62,17 @@ class DataLabeler:
                 if score == 0:
                     isSearchingForBegins = True
                     end = i-1
-                    result.append([begin,end])
+                    ciclo = [begin, end]
+
+                    if self.is_ciclo_valido(ciclo):
+                        result.append(ciclo)
+
                     begin = -1
                     end = -1
 
         print('Quantidade de grupos: ', len(result))
         
         return result
-
 
     def get_column_label(self, sizeDataset, positions_groups):
         column_label = []
@@ -90,3 +95,6 @@ class DataLabeler:
         print('Quantidade de dados rotulados como Ciclo: ', column_label.count('Ciclo'))     
                 
         return column_label
+
+    def is_ciclo_valido(self, ciclo):
+        return ((ciclo[1] - ciclo[0]) > (MAX_SCORE - INITIAL_SCORE))
