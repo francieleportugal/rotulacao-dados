@@ -5,11 +5,11 @@ import matplotlib as mat
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
-print(mat.__version__)
 
 TITLE = 'CASOS DE DENGUE - {}'
 PATH_LOG = '/home/franciele/Projetos/rotulacao-dados/src/log/log_{}.txt'
 PATH_FIGURE = '/home/franciele/Projetos/rotulacao-dados/src/figures/{}.png'
+
 
 def clean_log (municipio):
     nameMunicipio = helpers.replace_municipio_path(municipio)

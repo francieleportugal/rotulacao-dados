@@ -98,3 +98,11 @@ class DataLabeler:
 
     def is_ciclo_valido(self, ciclo):
         return ((ciclo[1] - ciclo[0]) > (MAX_SCORE - INITIAL_SCORE))
+    
+    def execute(self, df_municipio, path, log):
+        self.mark_database(df_municipio)
+        groups = self.find_groups(list(df_municipio['label']), log)
+        column_final_label = self.get_column_label(len(list(df_municipio['label'])), groups)        
+        df_municipio['final_label'] = column_final_label        
+        df_municipio = df_municipio.drop(columns=['Unnamed: 0', 'id', 'municipio', 'label'])
+        df_municipio.to_csv(path)
