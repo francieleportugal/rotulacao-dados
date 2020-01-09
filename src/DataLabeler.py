@@ -35,6 +35,9 @@ class DataLabeler:
         isSeachingForEnds = False
 
         for i,value in enumerate(data):
+            log.write('----------------------------\n')
+            log.write('Position: ' + str(i) + '\n')
+            log.write('Value: ' + str(value) + '\n')
 
             if isSearchingForBegins:
                     
@@ -59,25 +62,29 @@ class DataLabeler:
                 elif value == DOWN_MEAN:
                     score = score - 1
                 
-                if score == 0:
-                    isSearchingForBegins = True
-                    end = i-1
-                    ciclo = [begin, end]
+                    if score == 0:
+                        isSearchingForBegins = True
+                        end = i-1
+                        ciclo = [begin, end]
 
-                    if self.is_ciclo_valido(ciclo):
-                        result.append(ciclo)
+                        if self.is_ciclo_valido(ciclo):
+                            result.append(ciclo)
 
-                    begin = -1
-                    end = -1
-
-        print('Quantidade de grupos: ', len(result))
+                        begin = -1
+                        end = -1
+                
+                log.write('Score: ' + str(score) + '\n')
         
         return result
 
-    def get_column_label(self, sizeDataset, positions_groups):
+    def get_column_label(self, sizeDataset, positions_groups, log):
+        position = 0
         column_label = []
         size = len(positions_groups)
-        position = 0
+
+        log.write('\n\n')
+        log.write('RESUMO\n')
+        log.write('Quantidade de grupos ciclo: ' + str(size) + '\n')
         
         group = positions_groups[position]
         
@@ -91,8 +98,11 @@ class DataLabeler:
                 position = position + 1
                 group = positions_groups[position]  
 
-        print('Quantidade de dados rotulados como Não ciclo: ', column_label.count('Não ciclo'))
-        print('Quantidade de dados rotulados como Ciclo: ', column_label.count('Ciclo'))     
+        countNaoCiclo = column_label.count('Não ciclo')
+        countCiclo = column_label.count('Ciclo')
+
+        log.write('Quantidade de dados rotulados como Não ciclo: ' + str(countNaoCiclo) + '\n')
+        log.write('Quantidade de dados rotulados como Ciclo: ' + str(countCiclo) + '\n')     
                 
         return column_label
 
@@ -102,7 +112,8 @@ class DataLabeler:
     def execute(self, df_municipio, path, log):
         self.mark_database(df_municipio)
         groups = self.find_groups(list(df_municipio['label']), log)
-        column_final_label = self.get_column_label(len(list(df_municipio['label'])), groups)        
+        column_final_label = self.get_column_label(len(list(df_municipio['label'])), groups, log)        
         df_municipio['final_label'] = column_final_label        
         df_municipio = df_municipio.drop(columns=['Unnamed: 0', 'id', 'municipio', 'label'])
         df_municipio.to_csv(path)
+
