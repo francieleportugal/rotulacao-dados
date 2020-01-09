@@ -9,6 +9,7 @@ DOWN_MEAN = 0
 CICLO = 'Ciclo'
 NAO_CICLO =  'Não ciclo'
 
+
 class DataLabeler:
     def mark_database (self, df):
         margin = 5
@@ -24,10 +25,7 @@ class DataLabeler:
         return df
 
     def find_groups(self, data, log):
-
-        max_point_score = 5
-        initial_score = 2
-        score = initial_score
+        score = INITIAL_SCORE
 
         result = []
         begin = -1
@@ -40,29 +38,27 @@ class DataLabeler:
 
             if isSearchingForBegins:
                     
-                if value == 1:
+                if value == UP_MEAN:
                     isSearchingForBegins = False
-                    isSeachingForEnds = True
-                    score = initial_score
+                    score = INITIAL_SCORE
                     begin = i
                     
-            elif isSeachingForEnds:
+            elif not isSeachingForEnds:
                 
                 if i == len(data)-1:
                     result.append([begin,i])
                 
-                elif value == 1:
+                elif value == UP_MEAN:
                     score = score +1
                     
-                    if score > max_point_score:
-                        score = max_point_score
+                    if score > MAX_SCORE:
+                        score = MAX_SCORE
                         
-                elif value == 0:
+                elif value == DOWN_MEAN:
                     score = score - 1
                 
                 if score == 0:
                     isSearchingForBegins = True
-                    isSeachingForEnds = False
                     end = i-1
                     result.append([begin,end])
                     begin = -1
@@ -72,54 +68,6 @@ class DataLabeler:
         
         return result
 
-    # def find_groups(self, data, log):
-    #     score = INITIAL_SCORE
-    #     result = []
-    #     begin = -1
-    #     end= -1
-
-    #     isSearchingForBegins = True
-
-    #     for i,value in enumerate(data):
-    #         log.write('----------------------------\n')
-    #         log.write('Position: ' + str(i) + '\n')
-    #         log.write('Value: ' + str(value) + '\n')
-
-    #         if isSearchingForBegins:
-                    
-    #             if value == 1:
-    #                 log.write('Iniciando ciclo\n')
-    #                 isSearchingForBegins = False
-    #                 score = INITIAL_SCORE
-    #                 begin = i
-                        
-    #             log.write('Score: ' + str(score) + '\n')
-                    
-    #         elif not isSearchingForBegins:
-                
-    #             if i == (len(data) - 1):
-    #                 result.append([begin,i])
-                
-    #             elif value == UP_MEAN:
-    #                 score = score +1
-                    
-    #                 if score > MAX_SCORE:
-    #                     score = MAX_SCORE
-                        
-    #             elif value == DOWN_MEAN:
-    #                 score = score - 1
-                    
-    #                 if score == 0:
-    #                     log.write('Finalizando ciclo\n')
-    #                     isSearchingForBegins = True
-    #                     end = i - 1
-    #                     result.append([begin,end])
-    #                     begin = -1
-    #                     end = -1
-
-    #             log.write('Score: ' + str(score) + '\n')
-        
-    #     return result
 
     def get_column_label(self, sizeDataset, positions_groups):
         column_label = []
