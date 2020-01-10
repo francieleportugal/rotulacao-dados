@@ -8,11 +8,12 @@ UP_MEAN = 1
 DOWN_MEAN = 0
 CICLO = 'Ciclo'
 NAO_CICLO =  'Não ciclo'
+MARGIN = 0
 
 
 class DataLabeler:
     def mark_database (self, df):
-        margin = 5
+        margin = MARGIN
         mean = np.mean(list(df[COL_NOTIFICACOES]))
 
         data = list(map(
