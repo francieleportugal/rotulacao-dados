@@ -54,6 +54,7 @@ def save_figure(df, municipio):
     plt.bar(data, notificacoes, color=colors)
     plt.xticks(data)
     plt.savefig(PATH_FIGURE.format(municipio))
+    plt.clf()
 
 def clean_figure (municipio):
     if os.path.exists(PATH_FIGURE.format(municipio)):

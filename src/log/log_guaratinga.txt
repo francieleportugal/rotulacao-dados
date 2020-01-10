@@ -60,13 +60,15 @@ Position: 19
 Value: 0
 ----------------------------
 Position: 20
-Value: 0
+Value: 1
 ----------------------------
 Position: 21
 Value: 0
+Score: 1
 ----------------------------
 Position: 22
 Value: 0
+Score: 0
 ----------------------------
 Position: 23
 Value: 0
@@ -78,13 +80,15 @@ Position: 25
 Value: 0
 ----------------------------
 Position: 26
-Value: 0
+Value: 1
 ----------------------------
 Position: 27
 Value: 0
+Score: 1
 ----------------------------
 Position: 28
 Value: 0
+Score: 0
 ----------------------------
 Position: 29
 Value: 0
@@ -96,49 +100,63 @@ Position: 31
 Value: 0
 ----------------------------
 Position: 32
-Value: 0
+Value: 1
 ----------------------------
 Position: 33
-Value: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 34
-Value: 0
+Value: 1
+Score: 4
 ----------------------------
 Position: 35
 Value: 0
+Score: 3
 ----------------------------
 Position: 36
 Value: 0
+Score: 2
 ----------------------------
 Position: 37
 Value: 0
+Score: 1
 ----------------------------
 Position: 38
-Value: 0
+Value: 1
+Score: 2
 ----------------------------
 Position: 39
-Value: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 40
-Value: 0
+Value: 1
+Score: 4
 ----------------------------
 Position: 41
 Value: 0
+Score: 3
 ----------------------------
 Position: 42
 Value: 0
+Score: 2
 ----------------------------
 Position: 43
 Value: 0
+Score: 1
 ----------------------------
 Position: 44
-Value: 0
+Value: 1
+Score: 2
 ----------------------------
 Position: 45
 Value: 0
+Score: 1
 ----------------------------
 Position: 46
 Value: 0
+Score: 0
 ----------------------------
 Position: 47
 Value: 0
@@ -156,25 +174,31 @@ Position: 51
 Value: 0
 ----------------------------
 Position: 52
-Value: 0
+Value: 1
 ----------------------------
 Position: 53
 Value: 0
+Score: 1
 ----------------------------
 Position: 54
-Value: 0
+Value: 1
+Score: 2
 ----------------------------
 Position: 55
 Value: 0
+Score: 1
 ----------------------------
 Position: 56
-Value: 0
+Value: 1
+Score: 2
 ----------------------------
 Position: 57
 Value: 0
+Score: 1
 ----------------------------
 Position: 58
 Value: 0
+Score: 0
 ----------------------------
 Position: 59
 Value: 0
@@ -225,13 +249,15 @@ Position: 74
 Value: 0
 ----------------------------
 Position: 75
-Value: 0
+Value: 1
 ----------------------------
 Position: 76
 Value: 0
+Score: 1
 ----------------------------
 Position: 77
 Value: 1
+Score: 2
 ----------------------------
 Position: 78
 Value: 0
@@ -242,71 +268,87 @@ Value: 0
 Score: 0
 ----------------------------
 Position: 80
-Value: 0
+Value: 1
 ----------------------------
 Position: 81
 Value: 0
+Score: 1
 ----------------------------
 Position: 82
-Value: 0
+Value: 1
+Score: 2
 ----------------------------
 Position: 83
-Value: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 84
 Value: 0
+Score: 2
 ----------------------------
 Position: 85
 Value: 1
+Score: 3
 ----------------------------
 Position: 86
 Value: 0
-Score: 1
+Score: 2
 ----------------------------
 Position: 87
-Value: 0
-Score: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 88
-Value: 0
+Value: 1
+Score: 4
 ----------------------------
 Position: 89
-Value: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 90
-Value: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 91
 Value: 0
+Score: 4
 ----------------------------
 Position: 92
 Value: 0
+Score: 3
 ----------------------------
 Position: 93
-Value: 0
+Value: 1
+Score: 4
 ----------------------------
 Position: 94
 Value: 1
+Score: 5
 ----------------------------
 Position: 95
-Value: 0
-Score: 1
+Value: 1
+Score: 5
 ----------------------------
 Position: 96
 Value: 0
-Score: 0
+Score: 4
 ----------------------------
 Position: 97
 Value: 0
+Score: 3
 ----------------------------
 Position: 98
 Value: 0
+Score: 2
 ----------------------------
 Position: 99
 Value: 0
+Score: 1
 ----------------------------
 Position: 100
 Value: 0
+Score: 0
 ----------------------------
 Position: 101
 Value: 0
@@ -375,52 +417,59 @@ Position: 122
 Value: 0
 ----------------------------
 Position: 123
-Value: 0
+Value: 1
 ----------------------------
 Position: 124
-Value: 0
-----------------------------
-Position: 125
-Value: 0
-----------------------------
-Position: 126
-Value: 1
-----------------------------
-Position: 127
-Value: 0
-Score: 1
-----------------------------
-Position: 128
-Value: 1
-Score: 2
-----------------------------
-Position: 129
-Value: 0
-Score: 1
-----------------------------
-Position: 130
-Value: 0
-Score: 0
-----------------------------
-Position: 131
-Value: 0
-----------------------------
-Position: 132
-Value: 0
-----------------------------
-Position: 133
-Value: 0
-----------------------------
-Position: 134
-Value: 1
-----------------------------
-Position: 135
 Value: 1
 Score: 3
 ----------------------------
-Position: 136
+Position: 125
+Value: 0
+Score: 2
+----------------------------
+Position: 126
+Value: 1
+Score: 3
+----------------------------
+Position: 127
 Value: 1
 Score: 4
+----------------------------
+Position: 128
+Value: 1
+Score: 5
+----------------------------
+Position: 129
+Value: 1
+Score: 5
+----------------------------
+Position: 130
+Value: 1
+Score: 5
+----------------------------
+Position: 131
+Value: 0
+Score: 4
+----------------------------
+Position: 132
+Value: 1
+Score: 5
+----------------------------
+Position: 133
+Value: 0
+Score: 4
+----------------------------
+Position: 134
+Value: 1
+Score: 5
+----------------------------
+Position: 135
+Value: 1
+Score: 5
+----------------------------
+Position: 136
+Value: 1
+Score: 5
 ----------------------------
 Position: 137
 Value: 1
@@ -443,111 +492,129 @@ Value: 1
 Score: 5
 ----------------------------
 Position: 142
-Value: 0
-Score: 4
+Value: 1
+Score: 5
 ----------------------------
 Position: 143
-Value: 0
-Score: 3
+Value: 1
+Score: 5
 ----------------------------
 Position: 144
-Value: 0
-Score: 2
+Value: 1
+Score: 5
 ----------------------------
 Position: 145
 Value: 1
-Score: 3
+Score: 5
 ----------------------------
 Position: 146
-Value: 0
-Score: 2
+Value: 1
+Score: 5
 ----------------------------
 Position: 147
-Value: 0
-Score: 1
+Value: 1
+Score: 5
 ----------------------------
 Position: 148
 Value: 0
-Score: 0
+Score: 4
 ----------------------------
 Position: 149
 Value: 0
+Score: 3
 ----------------------------
 Position: 150
 Value: 1
+Score: 4
 ----------------------------
 Position: 151
 Value: 0
-Score: 1
+Score: 3
 ----------------------------
 Position: 152
 Value: 1
-Score: 2
+Score: 4
 ----------------------------
 Position: 153
-Value: 0
-Score: 1
+Value: 1
+Score: 5
 ----------------------------
 Position: 154
-Value: 0
-Score: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 155
-Value: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 156
 Value: 0
+Score: 4
 ----------------------------
 Position: 157
-Value: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 158
 Value: 0
+Score: 4
 ----------------------------
 Position: 159
 Value: 0
+Score: 3
 ----------------------------
 Position: 160
-Value: 0
+Value: 1
+Score: 4
 ----------------------------
 Position: 161
 Value: 0
+Score: 3
 ----------------------------
 Position: 162
 Value: 0
+Score: 2
 ----------------------------
 Position: 163
 Value: 0
+Score: 1
 ----------------------------
 Position: 164
 Value: 0
+Score: 0
 ----------------------------
 Position: 165
 Value: 0
 ----------------------------
 Position: 166
-Value: 0
+Value: 1
 ----------------------------
 Position: 167
 Value: 0
+Score: 1
 ----------------------------
 Position: 168
 Value: 0
+Score: 0
 ----------------------------
 Position: 169
-Value: 0
+Value: 1
 ----------------------------
 Position: 170
-Value: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 171
 Value: 0
+Score: 2
 ----------------------------
 Position: 172
 Value: 0
+Score: 1
 ----------------------------
 Position: 173
 Value: 0
+Score: 0
 ----------------------------
 Position: 174
 Value: 0
@@ -589,49 +656,61 @@ Position: 186
 Value: 0
 ----------------------------
 Position: 187
-Value: 0
+Value: 1
 ----------------------------
 Position: 188
-Value: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 189
-Value: 0
+Value: 1
+Score: 4
 ----------------------------
 Position: 190
 Value: 0
+Score: 3
 ----------------------------
 Position: 191
 Value: 0
+Score: 2
 ----------------------------
 Position: 192
 Value: 0
+Score: 1
 ----------------------------
 Position: 193
 Value: 0
+Score: 0
 ----------------------------
 Position: 194
-Value: 0
+Value: 1
 ----------------------------
 Position: 195
-Value: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 196
 Value: 0
+Score: 2
 ----------------------------
 Position: 197
 Value: 0
+Score: 1
 ----------------------------
 Position: 198
 Value: 0
+Score: 0
 ----------------------------
 Position: 199
-Value: 0
+Value: 1
 ----------------------------
 Position: 200
 Value: 0
+Score: 1
 ----------------------------
 Position: 201
 Value: 0
+Score: 0
 ----------------------------
 Position: 202
 Value: 0
@@ -644,6 +723,6 @@ Value: 0
 
 
 RESUMO
-Quantidade de grupos ciclo: 1
-Quantidade de dados rotulados como Não ciclo: 191
-Quantidade de dados rotulados como Ciclo: 14
+Quantidade de grupos ciclo: 5
+Quantidade de dados rotulados como Não ciclo: 118
+Quantidade de dados rotulados como Ciclo: 87

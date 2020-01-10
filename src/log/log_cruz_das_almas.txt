@@ -33,13 +33,15 @@ Position: 10
 Value: 0
 ----------------------------
 Position: 11
-Value: 0
+Value: 1
 ----------------------------
 Position: 12
 Value: 0
+Score: 1
 ----------------------------
 Position: 13
 Value: 0
+Score: 0
 ----------------------------
 Position: 14
 Value: 0
@@ -54,191 +56,236 @@ Position: 17
 Value: 0
 ----------------------------
 Position: 18
-Value: 0
+Value: 1
 ----------------------------
 Position: 19
 Value: 0
+Score: 1
 ----------------------------
 Position: 20
 Value: 0
+Score: 0
 ----------------------------
 Position: 21
-Value: 0
+Value: 1
 ----------------------------
 Position: 22
-Value: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 23
 Value: 0
+Score: 2
 ----------------------------
 Position: 24
 Value: 1
+Score: 3
 ----------------------------
 Position: 25
 Value: 0
-Score: 1
+Score: 2
 ----------------------------
 Position: 26
-Value: 0
-Score: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 27
 Value: 1
+Score: 4
 ----------------------------
 Position: 28
-Value: 0
-Score: 1
+Value: 1
+Score: 5
 ----------------------------
 Position: 29
-Value: 0
-Score: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 30
 Value: 0
+Score: 4
 ----------------------------
 Position: 31
 Value: 0
+Score: 3
 ----------------------------
 Position: 32
 Value: 0
+Score: 2
 ----------------------------
 Position: 33
-Value: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 34
 Value: 0
+Score: 2
 ----------------------------
 Position: 35
 Value: 0
+Score: 1
 ----------------------------
 Position: 36
 Value: 0
+Score: 0
 ----------------------------
 Position: 37
 Value: 1
 ----------------------------
 Position: 38
-Value: 0
-Score: 1
+Value: 1
+Score: 3
 ----------------------------
 Position: 39
-Value: 0
-Score: 0
+Value: 1
+Score: 4
 ----------------------------
 Position: 40
-Value: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 41
-Value: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 42
-Value: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 43
 Value: 1
+Score: 5
 ----------------------------
 Position: 44
-Value: 0
-Score: 1
+Value: 1
+Score: 5
 ----------------------------
 Position: 45
-Value: 0
-Score: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 46
 Value: 0
+Score: 4
 ----------------------------
 Position: 47
 Value: 0
+Score: 3
 ----------------------------
 Position: 48
 Value: 0
+Score: 2
 ----------------------------
 Position: 49
-Value: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 50
-Value: 0
+Value: 1
+Score: 4
 ----------------------------
 Position: 51
-Value: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 52
-Value: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 53
-Value: 0
+Value: 1
+Score: 5
 ----------------------------
 Position: 54
 Value: 0
+Score: 4
 ----------------------------
 Position: 55
 Value: 0
+Score: 3
 ----------------------------
 Position: 56
-Value: 0
+Value: 1
+Score: 4
 ----------------------------
 Position: 57
 Value: 1
+Score: 5
 ----------------------------
 Position: 58
-Value: 0
-Score: 1
+Value: 1
+Score: 5
 ----------------------------
 Position: 59
 Value: 0
-Score: 0
+Score: 4
 ----------------------------
 Position: 60
 Value: 0
+Score: 3
 ----------------------------
 Position: 61
-Value: 0
+Value: 1
+Score: 4
 ----------------------------
 Position: 62
 Value: 0
+Score: 3
 ----------------------------
 Position: 63
 Value: 0
+Score: 2
 ----------------------------
 Position: 64
-Value: 0
+Value: 1
+Score: 3
 ----------------------------
 Position: 65
 Value: 0
+Score: 2
 ----------------------------
 Position: 66
 Value: 0
+Score: 1
 ----------------------------
 Position: 67
-Value: 0
+Value: 1
+Score: 2
 ----------------------------
 Position: 68
 Value: 0
+Score: 1
 ----------------------------
 Position: 69
-Value: 0
+Value: 1
+Score: 2
 ----------------------------
 Position: 70
 Value: 0
+Score: 1
 ----------------------------
 Position: 71
 Value: 0
+Score: 0
 ----------------------------
 Position: 72
-Value: 0
+Value: 1
 ----------------------------
 Position: 73
 Value: 0
+Score: 1
 ----------------------------
 Position: 74
-Value: 0
+Value: 1
+Score: 2
 ----------------------------
 Position: 75
 Value: 0
+Score: 1
 ----------------------------
 Position: 76
 Value: 0
+Score: 0
 ----------------------------
 Position: 77
 Value: 0
@@ -247,13 +294,15 @@ Position: 78
 Value: 0
 ----------------------------
 Position: 79
-Value: 0
+Value: 1
 ----------------------------
 Position: 80
 Value: 0
+Score: 1
 ----------------------------
 Position: 81
 Value: 0
+Score: 0
 ----------------------------
 Position: 82
 Value: 0
@@ -298,8 +347,10 @@ Position: 95
 Value: 0
 ----------------------------
 Position: 96
-Value: 0
+Value: 1
 
 
 RESUMO
-Quantidade de grupos ciclo: 0
+Quantidade de grupos ciclo: 2
+Quantidade de dados rotulados como Não ciclo: 48
+Quantidade de dados rotulados como Ciclo: 49
